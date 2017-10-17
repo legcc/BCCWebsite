@@ -1,0 +1,222 @@
+@import "~element-ui/lib/theme-default/date-picker.css";
+@import "~element-ui/lib/theme-default/select.css";
+@import "~element-ui/lib/theme-default/icon.css";
+
+.content {
+  	padding: .18rem .28rem;
+	background: white;
+	min-height: 5.2rem;
+	.personal-information {
+  		.email-li{
+    		margin-top: 0.05rem;
+  		}
+  		li {
+    		margin-top: .17rem;
+  		}
+  		label {
+  			cursor: pointer;
+  		}
+  		.option-name {
+    		width: 2rem;
+    		display: inline-block;
+    		height: .31rem;
+    		line-height: .31rem;
+    		vertical-align: middle;
+    		font-family: GothamRounded-Medium;
+    		text-align: right;
+    		em {
+      			color: #fe0000;
+    		}
+  		}
+  		.option-component {
+    		display: inline-block;
+    		width: 3.2rem;
+    		text-align: left;
+    		height: .4rem;
+    		line-height: .4rem;
+    		vertical-align: middle;
+    		margin-left: .26rem;
+    		.el-cascader__label{
+      			line-height: .4rem;
+    		}
+    		.component-input-inner {
+      			outline: none;
+      			border: none;
+      			width: 85%;
+      			margin-left: 10px;
+      			&::-webkit-input-placeholder {
+        			color: #C2C7CE;
+        			text-indent: 4px;
+      			}
+      			&::-moz-placeholder {
+        			color: #C2C7CE;
+        			text-indent: 4px;
+      			}
+      			&:-ms-input-placeholder {
+        			color: #C2C7CE;
+        			text-indent: 4px;
+        		}
+      			&:-moz-placeholder {
+        			color: #C2C7CE;
+        			text-indent: 4px;
+      			}
+    		}
+    		[type="radio"] {
+      			vertical-align: middle;
+      			margin-bottom: .02rem;
+    		}
+  		}
+  		.address{
+    		width: 1.48rem;
+  		}
+  		.component-input, .el-input__inner {
+    		border: 1px solid lighten(#A2A5AA, 2%);
+    		border-radius: 5px;
+    		font-size: 14px;
+    		outline: none;
+    		color: lighten(black, 20%);
+    		box-shadow: 0 1px 2px lighten(#A2A5AA, -10%) inset;
+    		font-weight: normal;
+    		&:focus {
+      			border-color: lighten(#A2A5AA, -30%);
+    		}
+    		&::-webkit-input-placeholder {
+      			color: #C2C7CE;
+      			text-indent: 4px;
+    		}
+    		&::-moz-placeholder {
+      			color: #C2C7CE;
+      			text-indent: 4px;
+	    	}
+    		&:-ms-input-placeholder {
+      			color: #C2C7CE;
+      			text-indent: 4px;
+    		}
+    		&:-moz-placeholder {
+      			color: #C2C7CE;
+      			text-indent: 4px;
+	      	}
+  		}
+  		.el-input__inner {
+    		cursor: pointer;
+    		height: .4rem;
+  		}
+  		.el-icon-date {
+    		display: none;
+  		}
+  		.gender, .speaker {
+    		cursor: pointer;
+    		[type="radio"] {
+      			display: none;
+      			&:checked + .gender-item:before, &:checked + .speaker-item:before {
+        			background: #607592;
+     			}
+    		}
+    		.gender-item, .speaker-item {
+      			display: inline-block;
+      			position: relative;
+      			padding: 0 .18rem 0 .2rem;
+      			&:before {
+        			content: "";
+        			transition: .3s;
+        			background: white;
+        			display: block;
+        			width: .14rem;
+        			height: .14rem;
+        			border-radius: 50%;
+        			position: absolute;
+        			top: 48%;
+        			transform: translateY(-50%);
+        			left: 0;
+        			border: 1px solid #B9BEC5;
+      			}
+    		}
+  		}
+  		.submit-button {
+    		margin-left: 2.26rem;
+    		width: 1.45rem;
+    		height: .32rem;
+    		background: #607592;
+    		color: white;
+    		font-family: GothamRounded-Medium;
+    		font-size: 14px;
+    		letter-spacing: 1px;
+    		&:active{
+      			background: lighten(#607592,10%);
+    		}
+    		&:disabled{
+      			cursor: wait;
+    		}
+  		}
+	}
+	.security-center {
+  		width: 9.99rem;
+  		min-height: 5.2rem;
+  		& > li {
+    		padding: 0 .18rem;
+    		height: .7rem;
+    		line-height: .7rem;
+    		font-family: GothamRounded-Book;
+    		font-size: 14px;
+    		color: #7E8492;
+    		border: 1px solid #E9EBF3;
+    		border-bottom: none;
+    		display: block;
+    		position: relative;
+    		.lock {
+      			width: 18px;
+      			height: 18px;
+      			display: inline-block;
+      			vertical-align: middle;
+      			margin-right: .09rem;
+      			margin-left: -.02rem;
+      			background: url("~~assets/img/myBCC/userSetting/lock.svg") no-repeat;
+				background-size: 100% 100%;
+    		}
+    		.Arrow {
+      			width: 18px;
+      			height: 18px;
+      			display: inline-block;
+      			vertical-align: middle;
+      			margin-right: .04rem;
+      			background: url("~~assets/img/myBCC/userSetting/change.svg") no-repeat ;
+				background-size: 100% 100%;
+    		}
+    		.strong {
+      			font-family: GothamRounded-Medium;
+      			vertical-align: middle;
+      			color: #637082;
+      			margin: 0 .18rem 0 .12rem;
+    		}
+    		.big{
+      			font-size: 16px;
+    		}
+    		.messgae-btn {
+      			display: inline-block;
+      			position: absolute;
+      			right: .49rem;
+      			top: 50%;
+      			font-size: 14px;
+      			font-family: GothamRounded-Medium;
+      			transform: translateY(-50%);
+      			width: 1.45rem;
+      			height: .32rem;
+      			line-height: .32rem;
+      			background: #607592;
+      			color: white;
+    		}
+		}
+  		& > li:last-child {
+    		border-bottom: 1px solid #E9EBF3;
+  		}
+  		.important{
+    		background: #FFE7E7;
+  		}
+  	}
+  	.change-email{
+    	color: #8296c7;
+  	}
+  	.set-hint{
+    	color: #ff2f2f;
+  	}
+}

@@ -1,0 +1,78 @@
+.class-card .performance-view {
+    overflow: hidden;
+}
+.sLevel-list {
+    height: 4rem;
+    overflow: hidden;
+    .level-info {
+        width: 2.4rem;
+        height: 1.7rem;
+        float: left;
+        margin: .18rem .176rem .18rem 0;
+        background: #F0EFF5;
+        border-radius: 2px;
+        box-shadow: 0 5px 3px -2px #c4c6d3;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+        input {
+            margin-top: .08rem;
+        }
+    }
+    .lv1-bg {
+        background: #5B9BD5;
+    }
+    .lv2-bg {
+        background: #70AD47;
+    }
+    .lv3-bg {
+        background: #ED7D31;
+    }
+    .lv4-bg {
+        background: #666699;
+    }
+    .lv5-bg {
+        background: #FF5050;
+    }
+    .lv6-bg {
+        background: #4472C4;
+    }
+    .level-info:nth-child(1), .level-info:nth-child(2), .level-info:nth-child(3), .level-info:nth-child(4) {
+        margin-top: 0;
+    }
+    .level-info:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+.class-card {
+    height: 1.70rem;
+    border-radius: 2px 2px 0 0;
+    padding-top: .2rem;
+    box-sizing: border-box;
+    .img-container {
+        width: auto;
+        height: 1.17rem;
+        margin: 0 auto;
+        border-radius: 4px;
+        overflow: hidden;
+        background: url("~~assets/img/class/level-bg.svg") no-repeat;
+        background-position: center;
+        line-height: 1.1rem;
+        text-align: center;
+        font-family: GothamRounded-Medium;
+        font-size: 22px;
+        color: white;
+    }
+    em {
+        font-family: GothamRounded-Book;
+        width: 100%;
+        margin-top: .05rem;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        color: #f4f8fe;
+        text-align: center;
+    }
+}

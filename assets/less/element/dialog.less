@@ -1,0 +1,148 @@
+.dialog-container {
+	.title {
+    	font-size: 18px;
+        font-family: GothamRounded-Medium;
+        text-align: center;
+        margin: 0 auto .26rem auto;
+        line-height: 1;
+        height: .35rem;
+        color: #607592;
+        border-bottom: 2px solid #94BAD3;
+        position: relative;
+        &:after {
+        	content: "";
+            display: block;
+            position: absolute;
+            bottom: -.13rem;
+            border-left: .125rem solid transparent;
+            border-right: .125rem solid transparent;
+            border-top: .12rem solid #94BAD3;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .input-div {
+      margin: 0.18rem 0 0.18rem 0;
+      em {
+        margin: 0 0.05rem;
+      }
+    }
+    .dialog-selector, .dialog-input {
+        width: 55%;
+        margin-bottom:10px;
+    }
+    .auth-input{
+        width: 55%;
+    }
+    .el-dialog--tiny {
+        min-width: 460px;
+        padding: 0 .3rem;
+    }
+    .el-dialog__body {
+        padding-top: .12rem;
+    }
+    .el-dialog__footer {
+        text-align: center
+    }
+    .submit {
+        background: rgba(33, 76, 111, 1);
+    }
+    .cancel {
+        background-color: rgba(153, 153, 153, 1);
+    }
+    .el-select {
+        margin-left: 0rem;
+    }
+}
+/*dialog*/
+.el-dialog--tiny {
+    width: 420px;
+}
+.el-dialog__title {
+    margin: 0 .3rem
+}
+.tips {
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #7B8B8E;
+    position: relative;
+    left: 0;
+    top: -.2rem;
+    text-align: left;
+    padding: 0.1rem 0.1rem 0 0.1rem;
+    em {
+        color: #FF0000;
+    }
+}
+.el-dialog__body {
+    padding-bottom: .1rem;
+}
+.el-dialog__footer {
+    text-align: center
+}
+.dialog-btn {
+    width: 36%;
+    height: .32rem;
+    margin: -.3rem .06rem .3rem .06rem;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: opacity .1s ease-in;
+    &:hover {
+        opacity: .7;
+    }
+}
+.dialog-input-legend {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    margin-left: .2rem;
+    &:before {
+        content: "*";
+        color: red;
+        margin-right: 2px;
+    }
+}
+.dialog-link {
+    color: #4e6aac;
+}
+.submit {
+    background: rgba(33, 76, 111, 1);
+}
+.dis-submit {
+    background: #7f7f7f;
+}
+.cancel {
+    background-color: rgba(153, 153, 153, 1);
+}
+.website {
+    text-align: right;
+    font-family: 'Microsoft YaHei UI';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #4B77BE;
+    padding: .0rem .3rem 0 .3rem;
+}
+.el-dialog__header {
+    text-align: left;
+    .el-dialog__title {
+        color: #637082
+    }
+}
+/*dialog*/
+
+.el-message-box__message {
+    text-align: center;   
+}
+.el-message-box__btns {
+    text-align: center;
+}
+.el-button .el-button--default .el-button--primary {
+    backgroud: #607592;
+    border-color: #607592;
+}

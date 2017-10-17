@@ -1,0 +1,265 @@
+.topBanner-container {
+    background: url(~~assets/img/store/store.jpg) center no-repeat;
+    background-size:100%;
+    .background-container {
+        min-height: 5rem;
+        color: #f7f8fd;
+        box-sizing: border-box;
+        padding-top: 1.9rem;
+    }
+    .time-count {
+        font-size: 1rem;
+        color: #FFF;
+        text-align:right;
+        font-family: GothamRounded-Bold;
+    }
+}
+.top-container {
+    background: #607592 url("~~assets/img/store/store-banner.jpg") no-repeat;
+    background-size: 100% 100%;
+    .background-container {
+        min-height: 6.41rem;
+        color: #f7f8fd;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 1rem;
+        background-color: rgba(0, 0, 0, .15);
+    }
+    .welcome-message {
+        font-size: 54px;
+        font-family: GothamRounded-Medium;
+    }
+    .top-container-tipSentence {
+        width: 2.8rem;
+        margin: .37rem auto 0 auto;
+        font-family: GothamRounded-Medium;
+        font-size: 16px;
+        line-height: 29px;
+    }
+    .top-video-wrap {
+        margin-top: 1.01rem;
+        width: 2.11rem;
+        height: 1.12rem;
+        border-radius: 5px;
+        border: 5px solid #ebedf6;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, .2);
+        position: relative;
+        &:last-child {
+            margin-left: .43rem;
+        }
+        .video-player {
+            position: absolute;
+            width: .51rem;
+            height: .51rem;
+            top: -0.3rem;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        em{
+            position: absolute;
+            left:0;
+            right:0;
+            bottom:.12rem;
+        }
+    }
+    .top-video-wrap:hover {
+        transition: transform .2s ease-in;
+        transform: scale3d(1.05,1.05,2);
+        cursor: pointer;
+    }
+}
+.content-container {
+    min-height: 10rem;
+    background-color: white;
+    .card-aside {
+        height: 0.5rem;
+        color: #8296c7;
+        font-size: 14px;
+        font-family: GothamRounded-Book;
+        .div-left {
+            float: left;
+            width: 58%;
+        }
+        .valid-period {
+            float: left;
+            display: inline-block;
+            width: 58%;
+            height: 0.28rem;
+            line-height: 0.28rem;
+            overflow:hidden;
+            white-space: nowrap;
+        }
+        .original-price {
+            text-decoration: line-through;
+            float: right;
+            width: 40%;
+            height: 0.28rem;
+            line-height: 0.28rem;
+            overflow:hidden;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        .current-price {
+            font-size: 20px;
+            color: orange;
+            float: right;
+            display: inline-block;
+            width: 38%;
+            overflow:hidden;
+            height: 0.28rem;
+            line-height: 0.28rem;
+            white-space: nowrap;
+            margin: 0 0.05rem 0 0.05rem;
+        }
+    }
+    .card-content {
+        font-family: GothamRounded-Book;
+        font-size: 14px;
+        color: #607592;
+        text-align: center;
+        height: 1.6rem;
+        ul {
+            height: 1rem;
+            padding: 0 .18rem 0 .18rem;
+        }
+        .short-desc {
+            height: 1rem;
+        }
+        .number-tool {
+            line-height: 20px;
+            float: right;
+            margin-top: .16rem;
+        }
+        li {
+            position: relative;
+            width: 100%;
+            line-height: .32rem;
+        }
+        li:after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            left: 0;
+            background: #c4c6d3 linear-gradient(90deg, #c4c6d3 50%, #F0EFF5 0, #F0EFF5 100%) repeat-x;
+            background-size: 18px 1.5px;
+            bottom: -1px;
+        }
+    }
+    .bear-head {
+        width: 1.16rem;
+        height: .77rem;
+        margin-bottom: .06rem;
+    }
+    .top-container-title {
+        font-size: 22px;
+        color: white;
+        font-family: GothamRounded-Medium;
+    }
+    .card-description {
+        font-size: 14px;
+        color: white;
+        font-family: GothamRounded-Medium;
+        display:block;
+    }
+    .production-section-top {
+        text-align: center;
+        padding: 0.5rem 0 0.3rem 0;
+    }
+    .production-section-not-top {
+        text-align: center;
+        padding: 0.1rem 0 0.3rem 0;
+    }
+    .production-title {
+        font-size: 22px;
+        font-family: GothamRounded-Book;
+        color: #607592;
+        margin: 0 0 .24rem 0;
+    }
+    .production-ul {
+        width: 10rem;
+        margin: 0 auto;
+    }
+    .production-top-container {
+        padding-top: .24rem;
+        height: 1.8rem;
+    }
+    @educatorOneWrapColor: #FF5050;
+    @educatorTwoWrapColor: #41AEBD;
+    @studentNullWrapColor: #FF5050;
+    @studentOneWrapColor: #5B9BD5;
+    @studentTwoWrapColor: #70AD47;
+    @studentThreeWrapColor: #ED7D31;
+    @studentFourWrapColor: #686697;
+    .production-list:hover {
+        transition: transform .2s ease-in;
+        transform: scale3d(1.05,1.05,2);
+        cursor: pointer;
+    }
+    .production-list {
+        width: 2.55rem;
+        min-height: 3.36rem;
+        margin: 0.1rem 0.1rem;
+        display: inline-block;
+        overflow:hidden;
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 0 2px 6px -2px black;
+        .edu1 {
+            box-shadow: 0 -2px 0 1px @educatorOneWrapColor;
+            background-color: @educatorOneWrapColor;
+        }
+        .edu2 {
+            box-shadow: 0 -2px 0 1px @educatorTwoWrapColor;
+            background-color: @educatorTwoWrapColor;
+        }
+        .stu0 {
+            box-shadow: 0 -2px 0 1px @studentNullWrapColor;
+            background-color: @studentNullWrapColor;
+        }
+        .stu1 {
+            box-shadow: 0 -2px 0 1px @studentOneWrapColor;
+            background-color: @studentOneWrapColor;
+        }
+        .stu2 {
+            box-shadow: 0 -2px 0 1px @studentTwoWrapColor;
+            background-color: @studentTwoWrapColor;
+        }
+        .stu3 {
+            box-shadow: 0 -2px 0 1px @studentThreeWrapColor;
+            background-color: @studentThreeWrapColor;
+        }
+        .stu4 {
+            box-shadow: 0 -2px 0 1px @studentFourWrapColor;
+            background-color: @studentFourWrapColor;
+        }
+    }
+}
+.level-info-shade {
+    width: 100%;
+    height: 100%;
+}
+.level-info-shade-lock {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: all .5s linear;
+    display: block;
+    background: rgba(0, 0, 0, .5) url("~~assets/img/class/white-lock.png") center no-repeat;
+}
+video {
+    width: 74.5%;
+    height: 67%;
+    margin-left: 0.15rem;
+    margin-top: .72rem;
+    cursor: pointer;
+    -o-object-fit: fill;
+    object-fit: fill;
+    border-radius: 0.07rem;
+}

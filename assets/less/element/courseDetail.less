@@ -1,0 +1,260 @@
+.lesson-info-title {
+	display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    font-family: GothamRounded-Book;
+    font-weight: bolder;
+    color: #f4f8fe;
+}
+.main-title {
+    padding: .17rem .38rem .17rem .28rem;
+    margin-bottom: 2px;
+    background: white;
+    overflow: hidden;
+    min-height: 1.8rem;
+}
+.lesson-card {
+	height: 1.7rem;
+    width: 2.4rem;
+    float: left;
+    padding-bottom: .1rem;
+    border-radius: 2px;
+    box-shadow: 0 5px 3px -2px #c4c6d3;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.lesson-card:hover {
+    transition: transform .2s ease-in;
+    transform: scale3d(1.05,1.05,2);
+    cursor: pointer;
+}
+.info-img {
+    display: block;
+    margin: 0 auto;
+}
+.info-state {
+    color: #f4f8fe;
+    font-family: GothamRounded-Book;
+    display: block;
+    height: .42rem;
+    line-height: .42rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.info-start {
+    width: 100%;
+    height: 100%;
+}
+.img-container {
+    width: .95rem;
+    height: .66rem;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.info-shade-lock {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: all .5s linear;
+    display: block;
+    background: rgba(0, 0, 0, .5) url("~~assets/img/class/white-lock.png") center no-repeat;
+}
+.exercise-img-container {
+    width: .92rem;
+    height: .66rem;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.info-introduce {
+    font-family: GothamRounded-Book;
+    width: 100%;
+    margin-top: .05rem;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f4f8fe;
+}
+.info-title {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    font-family: GothamRounded-Book;
+    font-weight: bolder;
+    color: #f4f8fe;
+}
+.course-info {
+    float: left;
+    margin-left: 0.3rem;
+    height: 1.8rem;
+    h1 {
+        line-height: .4rem;
+        [class^="icon-"] {
+            display: inline-block;
+            margin-right: .08rem;
+            vertical-align: middle;
+            width: .16rem;
+            height: .16rem;
+            position: relative;
+            top: .01rem;
+        }
+        em {
+            color: #607592;
+            font-weight: bolder;
+            font-size: 18px;
+            vertical-align: middle;
+            font-family: GothamRounded-Medium;
+        }
+    }
+}
+.icon-cup {
+    background: url("~~assets/img/my_course/course_info.svg") no-repeat;
+    background-size: 100% 100%;
+}
+.course-info-tb {
+    font-family: "GothamRounded-Book";
+    line-height: .35rem;
+    tr {
+        height: .3rem;
+    }
+    td:first-child {
+        text-align: right;
+        color: #50627c;
+    }
+    td:last-child {
+        text-align: left;
+        padding-left: .18rem;
+        color: #7d8b9f;
+        font-size: 16px;
+    }
+}
+.course-skip {
+    float: right;
+    .statistics-skip-btn {
+        height: .32rem;
+        width: 1.41rem;
+        font-family: "GothamRounded-Medium";
+        color: white;
+        font-size: 14px;
+        background: #607592;
+        &:hover {
+            background: lighten(#FFB400, 6%);
+        }
+    }
+}
+.main-content {
+    background: #ffffff;
+    padding: .18rem .28rem;
+    user-select: none;
+    overflow: hidden;
+}
+.exercise-info {
+    width: 2.4rem;
+    float: left;
+    margin: 0 .22rem 0 0;
+    min-height: 2.4rem;
+    background: #F0EFF5;
+    border-radius: 2px;
+    box-shadow: 0 5px 3px -2px #c4c6d3;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.exercise-card {
+	height: 1.7rem;
+    border-radius: 2px 2px 0 0;
+    width: 2.4rem;
+}
+.exercise-info:hover {
+    transition: transform .2s ease-in;
+    transform: scale3d(1.05,1.05,2);
+    cursor: pointer;
+}
+.exercise-introduction {
+    li {
+        margin: 0 .13rem;
+        text-indent: 2px;
+        height: .35rem;
+        line-height: .35rem;
+        position: relative;
+        color: #50627c;
+        font-size: 12px;
+        font-family: GothamRounded-Book;
+        font-weight: bolder;
+        .aside {
+            /*
+            position: absolute;
+            */
+            float: right;
+            left: 55%;
+            em {
+                color: #7d8b9f;
+            }
+        }
+        /*虚线*/
+        &:not(:last-child):after {
+            content: "";
+            position: absolute;
+            height: 1.5px;
+            width: 100%;
+            left: 0;
+            background: #c4c6d3 linear-gradient(90deg, #c4c6d3 50%, #F0EFF5 0, #F0EFF5 100%) repeat-x;
+            background-size: 18px 1.5px;
+            bottom: -1px;
+        }
+    }
+}
+.level1 {
+    background: #5b9bd5;
+}
+.level2 {
+    background: #70ad47;
+}
+.level3 {
+    background: #ed7d31;
+}
+.level4 {
+    background: #666699;
+}
+.level5 {
+    background: #ff5050;
+}
+.level6 {
+    background: #4472c4;
+}
+.exercise-list {
+    li:nth-child(1) {
+        .exercise-card {
+            background: #ed7d31
+        }
+    }
+    li:nth-child(2) {
+        .exercise-card {
+            background: #ffc000
+        }
+    }
+    li:nth-child(3) {
+        .exercise-card {
+            background: #70ad47
+        }
+    }
+    li:nth-child(4) {
+        margin-right: 0;
+        .exercise-card {
+            background: #41aebd
+        }
+    }
+}

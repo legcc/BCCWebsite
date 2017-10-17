@@ -1,0 +1,177 @@
+.main-title {
+    background: white;
+    height: .5rem;
+    line-height: .5rem;
+    padding-left: .38rem;
+    font-family: GothamRounded-Medium;
+    color: #5A6572;
+    font-size: 14px;
+    border-bottom: 1px solid #F1F3F9;
+    text-align: left;
+}
+.main-view {
+    background: white;
+    overflow: hidden;
+    padding: .18rem .28rem;
+    box-sizing: border-box;
+}
+.cl-hint {
+	padding: .08rem .18rem .08rem .18rem;
+	line-height: 1.8;
+	font-size: 14px;
+    width: 10.13rem;
+    font-family: GothamRounded-Light;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    border: 1px solid #EBEDF6;
+    box-sizing: border-box;
+    background: #FFE7E7;
+	color: lighten(#6B7788, -4%);
+    a {
+        color: #8296c7;
+        cursor: pointer;
+    }
+    em {
+        color: #5F9DC1;
+        cursor: pointer;
+    }
+}
+.add-class-from {
+    width: 100%;
+    margin: .18rem 0 0 0;
+    font-size: 14px;
+    color: lighten(#7C8695, -5%);
+    .round-container {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        border: 1px solid #7F8CA0;
+        border-radius: 50%;
+        top: 0;
+        bottom: 0;
+        left: .2rem;
+        margin: auto;
+        color: #7F8CA0;
+        text-align: center;
+        line-height: 16px;
+    }
+    .hint-btn {
+        margin-left: .4rem;
+    }
+    table {
+        width: 100%;
+        td {
+            height: .55rem;
+            width: 34.3333%;
+            position: relative;
+            em {
+                display: inline-block;
+                color: red;
+                margin-right: .05rem;
+            }
+        }
+        tr:last-child {
+            height: .8rem;
+        }
+        td:first-child {
+            text-align: right;
+            padding-right: .25rem;
+            font-family: GothamRounded-Medium;
+        }
+        .note {
+            font-size: 12px;
+            text-align: left;
+            font-family: GothamRounded-light;
+            padding: 0 0.5rem 0 0;
+        }
+        .e-hint {
+            text-align: left;
+        }
+    }
+    .input-component, .option-component, .el-input__inner, .el-select, .select-component{
+        width: 3.22rem;
+        height: .4rem;
+        margin-left: 0rem;
+        border: 1px solid lighten(#A2A5AA, 2%);
+        border-radius: 5px;
+        font-size: 14px;
+        outline: none;
+        color: lighten(black, 20%);
+        box-shadow: 0 1px 2px lighten(#A2A5AA, -10%) inset;
+        font-weight: normal;
+        box-sizing: border-box;
+        &:focus {
+            border-color: lighten(#A2A5AA, -30%);
+        }
+        &::-webkit-input-placeholder {
+            color: #C2C7CE;
+            text-indent: 4px;
+        }
+        &::-moz-placeholder {
+            color: #C2C7CE;
+            text-indent: 4px;
+        }
+        &:-ms-input-placeholder {
+            color: #C2C7CE;
+            text-indent: 4px;
+        }
+        &:-moz-placeholder {
+            color: #C2C7CE;
+            text-indent: 4px;
+        }
+    }
+}
+.input-component {
+    padding-left: .08rem;
+}
+.upload-input {
+    display: none;
+}
+.upload-btn, .submmit-btn {
+    background: #607592;
+}
+.back-btn-l {
+    background: #7f7f7f;
+    margin-left: .18rem;
+}
+.submmit-btn, .back-btn-l {
+    width: 1.45rem;
+    &:disabled {
+        cursor: wait;
+    }
+}
+.upload-btn, .submmit-btn, .back-btn-l {
+    height: .32rem;
+    color: white;
+    font-family: GothamRounded-Medium;
+    display: inline-block;
+    font-size: 14px;
+}
+.upload-btn {
+    width: 1.6rem;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: .32rem;
+    cursor: pointer;
+    &:active {
+        background: lighten(#607592, 10%);
+    }
+}
+.download-it {
+    font-size: 14px;
+    color: #5F9DC1;
+    font-family: GothamRounded-Book;
+    padding-left: .125rem;
+}
+.e-hint {
+    font-size: 14px;
+    color: #5F9DC1;
+    font-family: GothamRounded-Book;
+    padding-left: .055rem;
+}
+.el-button--text {
+    color: #8692c7;
+}

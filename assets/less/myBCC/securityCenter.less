@@ -1,0 +1,161 @@
+input:disabled {
+    user-select: none;
+    color: #C2C7CE;
+}
+.change-password-container {
+    min-width: 10.13rem;
+    padding: 0rem 0 .3rem 0;
+    background: white;
+    min-height: 5.5rem;
+    font-family: GothamRounded-Medium;
+    .header {
+        padding: .15rem .4rem;
+        color: #5A6572;
+        font-family: GothamRounded-Medium;
+        border-bottom: 1px solid #F1F3F9;
+    }
+    .article {
+        padding: 0rem .0rem .0rem .35rem;
+        .tips {
+            margin: .28rem 0 .28rem 0;
+            width: 10.13rem;
+            text-indent: .4rem;
+            font-family: GothamRounded-Medium;
+            font-size: .14rem;
+            color: #ff2f2f;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            border: 1px solid #EBEDF6;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: .1rem 0rem .1rem 0rem;
+            background: #FFE7E7;
+            line-height: .25rem;
+            .tips-legend {
+                display: block;
+            }
+        }
+        .change-password-form, .change-email-form {
+            margin-top: .44rem;
+            li {
+                margin-top: .21rem;
+                position: relative;
+            }
+            .option-name {
+                font-family: GothamRounded-Medium;
+                font-size: 14px;
+                color: #707C8C;
+                width: 2.6rem;
+                height: .31rem;
+                display: inline-block;
+                line-height: .31rem;
+                text-align: right;
+                &:before {
+                    content: "*";
+                    margin-right: 3px;
+                    color: red;
+                }
+            }
+            .option-email {
+                width: 2.26rem;
+                font-family: GothamRounded-Book;
+                font-size: 14px;
+                height: .38rem;
+                margin-left: .25rem;
+                display: inline-block;
+                text-align: left;
+                line-height: .38rem;
+                vertical-align: middle;
+                outline: none;
+                color: lighten(black, 20%);
+                font-weight: normal;
+                color: #607592;
+            }
+            .option-component {
+                width: 2.26rem;
+                font-family: GothamRounded-Book;
+                font-size: 14px;
+                height: .31rem;
+                margin-left: .25rem;
+                display: inline-block;
+                text-align: left;
+                line-height: .31rem;
+                vertical-align: middle;
+                border: 1px solid lighten(#A2A5AA, 2%);
+                border-radius: 5px;
+                outline: none;
+                color: lighten(black, 20%);
+                box-shadow: 0 1px 2px lighten(#A2A5AA, -10%) inset;
+                font-weight: normal;
+                &:focus {
+                    border-color: lighten(#A2A5AA, -30%);
+                }
+                .component-input-inner {
+                    outline: none;
+                    border: none;
+                    width: 85%;
+                    margin-left: 10px;
+                    &::-webkit-input-placeholder {
+                        color: #C2C7CE;
+                        text-indent: 4px;
+                    }
+                    &::-moz-placeholder {
+                        color: #C2C7CE;
+                        text-indent: 4px;
+                    }
+                    &:-ms-input-placeholder {
+                        color: #C2C7CE;
+                        text-indent: 4px;
+                    }
+                    &:-moz-placeholder {
+                        color: #C2C7CE;
+                        text-indent: 4px;
+                    }
+                }
+            }
+            .err-message {
+                display: block;
+                position: absolute;
+                top: -.2rem;
+                font-size: 12px;
+                left: 2.88rem;
+                color: red;
+            }
+            .send-active-code {
+                font-family: GothamRounded-Book;
+                color: #607592;
+                background: none;
+                margin-left: .1rem;
+            }
+            .disabled {
+                cursor: not-allowed;
+                &:active {
+                    opacity: 1;
+                }
+            }
+            .button-section {
+                margin-left: 2.84rem;
+                margin-top: .4rem;
+                button {
+                    width: 1.52rem;
+                    height: .31rem;
+                    font-family: GothamRounded-Medium;
+                    font-size: 14px;
+                    color: white;
+                    background: #607592;
+                }
+                .cancel-button {
+                    background: #7f7f7f;
+                    margin-left: .15rem;
+                }
+            }
+        }
+    }
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */
+{
+    opacity: 0
+}

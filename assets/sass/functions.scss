@@ -1,0 +1,5 @@
+@function getHeightFromAspectRatio($content,$width){
+  $ratioWidth:map-get($content,width);
+  $ratioHeight:map-get($content,height);
+  @return $width / ($ratioWidth/$ratioHeight);
+}

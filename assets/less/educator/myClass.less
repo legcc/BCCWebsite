@@ -1,0 +1,243 @@
+.nav-right-btn {
+	font-size: 14px;
+}
+.class-view {
+	padding: 0.18rem 0.28rem;
+}
+.class-content {
+    padding: .2rem 0 0rem 0rem;
+    background: white;
+    overflow: hidden;
+}
+.content-view {
+    width: 100%;
+    height: 5.75rem;
+    overflow: hidden;
+    .class-operation {
+        display: block;
+        .add-class, .class-info {
+            width: 2.4rem;
+            height: 2.7rem;
+            float: left;
+            margin: 0.08rem 0.08rem;
+            background: #F0EFF5;
+            border-radius: 2px;
+            -webkit-box-shadow: 0 5px 3px -2px #c4c6d3;
+            box-shadow: 0 5px 3px -2px #c4c6d3;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+    }
+}
+.add-class {
+    display: table;
+    text-align: center;
+    .img-container {
+        display: inline-block;
+        width: 1.41rem;
+        height: .91rem;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 20px;
+        font-family: GothamRounded-Book;
+        font-weight: bolder;
+        color: #7D8B9F;
+    }
+}
+.add-class:hover {
+    transition: transform .2s ease-in;
+    transform: scale3d(1.05,1.05,2);
+    cursor: pointer;
+}
+.class-info-bear {
+    display: block;
+    margin: 0 auto;
+}
+.class-info {
+    width: 2.4rem;
+    height: 2.4rem;
+    float: left;
+    margin: .0 .12rem 0 0;
+    background: #F0EFF5;
+    border-radius: 2px;
+    box-shadow: 0 5px 3px -2px #c4c6d3;
+    position: relative;
+    overflow: hidden;
+    .class-card {
+        height: 1.6rem;
+        border-radius: 2px 2px 0 0;
+        padding-top: .2rem;
+        box-sizing: border-box;
+        .img-container {
+            width: auto;
+            height: 1.17rem;
+            margin: 0 auto;
+            border-radius: 4px;
+            overflow: hidden;
+            background: url("~~assets/img/class/level-bg.svg") no-repeat;
+            background-position: center;
+            line-height: 1.1rem;
+            text-align: center;
+            font-family: GothamRounded-Medium;
+            font-size: 22px;
+            color: white;
+        }
+        .class-info-bear {
+            display: block;
+            margin: 0 auto;
+        }
+        .class-info-introduce {
+            font-family: GothamRounded-Book;
+            width: 100%;
+            margin-top: .05rem;
+            box-sizing: border-box;
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #f4f8fe;
+            text-align: center;
+        }
+    }
+}
+.class-info:hover {
+    .class-info-start {
+        filter: blur(1px);
+        transition: all .2s linear;
+        position: relative;
+    }
+    .class-info-shade {
+        display: block;
+    }
+    transition: transform .2s ease-in;
+    transform: scale3d(1.05,1.05,2);
+    cursor: pointer;
+}
+/*upload*/
+.upload-btn {
+    width: 1.7rem;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: .32rem;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'GothamRounded-Medium';
+    color: white;
+    background: #607592;
+    height: .32rem;
+}
+.upload-btn-disable {
+    width: 1.7rem;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: .32rem;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'GothamRounded-Medium';
+    color: white;
+    height: .32rem;
+    background: #7f7f7f;
+}
+.upload-input {
+    display: none;
+}
+.class-info-shade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: all .5s linear;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+    .info-shade {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+    button {
+        width: 1.55rem;
+        height: .41rem;
+        background: rgba(0, 0, 0, .6);
+        color: #f6f5fe;
+        font-family: GothamRounded-Book;
+        line-height: .41rem;
+        text-align: center;
+        margin: .05rem 0 .05rem 0;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    button:hover {
+        background: #ff9900;
+    }
+}
+.class-introduction {
+    li {
+        color: #607592;
+        margin: 0 .1rem;
+        text-indent: 2px;
+        height: .35rem;
+        line-height: .35rem;
+        position: relative;
+        font-size: 12px;
+        font-family: GothamRounded-Book;
+        font-weight: bolder;
+        /*虚线*/
+        &:not(:last-child):after {
+            content: "";
+            position: absolute;
+            height: 1.5px;
+            width: 100%;
+            left: 0;
+            background: #c4c6d3 linear-gradient(90deg, #c4c6d3 50%, #F0EFF5 0, #F0EFF5 100%) repeat-x;
+            background-size: 18px 1.5px;
+            bottom: -1px;
+        }
+        em {
+            color: #8296c7;
+            margin-left: 0.06rem;
+        }
+    }
+}
+.class-init {
+    height: 5rem;
+    background: url("~~assets/img/home/login_img.png") no-repeat;
+    background-position: 1.02rem .92rem;
+    position: relative;
+}
+.class-init-hint {
+    font-family: GothamRounded-Medium;
+    color: #637082;
+    position: absolute;
+    top: 2.08rem;
+    right: .8rem;
+    line-height: .3rem;
+    font-size: 16px;
+    a {
+        font-size: 20px;
+        color: rgb(248, 154, 4);
+    }
+}
+.lv1-bg {
+    background: #5B9BD5;
+}
+.lv2-bg {
+    background: #70AD47;
+}
+.lv3-bg {
+    background: #ED7D31;
+}
+.lv4-bg {
+    background: #666699;
+}
+.lv5-bg {
+    background: #FF5050;
+}
+.lv6-bg {
+    background: #4472C4;
+}

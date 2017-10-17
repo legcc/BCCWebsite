@@ -1,0 +1,205 @@
+.container {
+    padding: 0 .8rem .18rem .8rem;
+    background: #EBEDF6;
+    color: #5A6572;
+}
+.container-nav {
+    height: .38rem;
+    line-height: .38rem;
+    font-family: GothamRounded-Book;
+    font-size: .12rem;
+    color: #8f9bad;
+    cursor: pointer;
+    li {
+        display: inline;
+        font-weight: bold;
+        position: relative;
+        &:not(:last-child):after {
+            color: #8f9bad;
+            content: " >";
+            font-weight: normal;
+            margin-right: .03rem;
+        }
+    }
+    .active {
+        color: lighten(#6c7d95, -10%);
+    }
+}
+.product-content {
+    padding: 0 .35rem .18rem .35rem;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: .18rem;
+    @educatorOneWrapColor: #FF5050;
+    @educatorTwoWrapColor: #41AEBD;
+    @studentNullWrapColor: #FF5050;
+    @studentOneWrapColor: #5B9BD5;
+    @studentTwoWrapColor: #70AD47;
+    @studentThreeWrapColor: #ED7D31;
+    @studentFourWrapColor: #686697;
+    .edu1 {
+        background-color: @educatorOneWrapColor;
+    }
+    .edu2 {
+        background-color: @educatorTwoWrapColor;
+    }
+    .stu0 {
+        background-color: @studentNullWrapColor;
+    }
+    .stu1 {
+        background-color: @studentOneWrapColor;
+    }
+    .stu2 {
+        background-color: @studentTwoWrapColor;
+    }
+    .stu3 {
+        background-color: @studentThreeWrapColor;
+    }
+    .stu4 {
+        background-color: @studentFourWrapColor;
+    }
+    .product-detail-wrap {
+        display: inline-block;
+        vertical-align: top;
+        width: 3.1rem;
+        height: 2.8rem;
+        text-align: center;
+        line-height: 2.4rem;
+        color: white;
+        position: relative;
+    }
+}
+.product-container {
+    background-color: white;
+    padding: .2rem 0;
+    .product-detail-img {
+        width: 1.93rem;
+        vertical-align: middle;
+        height: 1.28rem;
+    }
+    .product-detail-title {
+        font-size: 26px;
+        font-family: GothamRounded-Bold;
+        position: absolute;
+        width: 100%;
+        height: 26px;
+        line-height: 26px;
+        bottom: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .product-form {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 0 0 .38rem;
+        li {
+            min-height: .36rem;
+            line-height: .36rem;
+            font-size: 14px;
+            color: #607592;
+            font-family: GothamRounded-Book;
+            .series-item:not(:first-child) {
+                margin-left: .42rem;
+            }
+            .original-price {
+                text-decoration: line-through;
+                margin-left: .24rem;
+                font-size: 20px;
+            }
+            .current-price {
+                font-size: 20px;
+                color: orange;
+                margin-left: .24rem;
+            }
+        }
+        .number-tool {
+            line-height: 20px;
+        }
+        .product-form-title {
+            font-size: 20px;
+            font-family: GothamRounded-Medium;
+            color: #607592;
+            margin-bottom: .1rem;
+        }
+        .cont {
+            max-width: 6rem;
+        }
+    }
+}
+.production-detail {
+    text-align: center;
+    min-height: 6rem;
+    .recommend-picture {
+        width: 4rem;
+        height: 2rem;
+    }
+    .picture-tip {
+        margin: .16rem 0;
+        font-size: 24px;
+        font-family: GothamRounded-Book;
+    }
+    .big-picture {
+        margin-top: .1rem;
+        width: 8.85rem;
+        height: 7.14rem;
+    }
+}
+.user-comments {
+    padding: 0 .3rem;
+    min-height: 6rem;
+    .alert {
+        border: 1px solid #ebedf6;
+        background-color: #ebedf6;
+        color: #607592;
+        font-family: GothamRounded-Medium;
+        border-radius: 5px;
+        line-height: .4rem;
+        margin: 0.18rem 0 0 0;
+        padding: 0 .2rem;
+        min-height: .4rem;
+    }
+    .user-comments-list {
+        padding: .18rem 0 .16rem 0;
+        min-height: 1.3rem;
+        &:not(:last-child) {
+            border-bottom: 1px solid #cccccc;
+        }
+        .head-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: inline-block;
+            background: url(~~assets/img/logo.svg) no-repeat;
+            background-size: 100% 100%;
+            margin: 0 .18rem;
+            vertical-align: middle;
+        }
+        .user-name {
+            color: #607592;
+            font-family: GothamRounded-Bold;
+            vertical-align: middle;
+            margin-right: .38rem;
+        }
+        .comment-sentence {
+            margin-left: 1.55rem;
+            color: #607592;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: .18rem;
+        }
+        .comment-aside {
+            margin-left: 1.55rem;
+            color: #606c76;
+            font-size: 14px;
+            margin-top: .12rem;
+        }
+        .aside-info {
+            margin-right: .68rem;
+        }
+        .icon-wujiaoxing {
+            vertical-align: top;
+            font-size: 24px;
+            color: #ffde3e;
+            text-shadow: 3px 3px 4px #cccccc;
+        }
+    }
+}

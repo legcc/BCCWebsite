@@ -1,0 +1,44 @@
+{
+  "words": [
+    {
+      "pinyin": "mao",
+      "chinese": "猫",
+      "english": "cat",
+      "wordImage": "level1/lesson7/exercise4/l1-l7-p1-1.png",
+      "wordGif": "level1/lesson7/exercise4/l1-l7-p1-2.gif",
+      "image": "level1/lesson7/exercise4/l1-l7-p1-3.png"
+    }
+  ],
+  "strokes": [
+    {
+      "stroke": "strokes/strokes_hen.png",
+      "order": "1"
+    },
+    {
+      "stroke": "strokes/strokes_shu.png",
+      "order": "2"
+    },
+    {
+      "stroke": "strokes/strokes_pie.png",
+      "order": "3"
+    },
+    {
+      "stroke": "strokes/strokes_henzhegou.png",
+      "order": "4"
+    },
+    {
+      "stroke": "strokes/strokes_shugou.png",
+      "order": "5"
+    }
+  ],
+  "strokeimg": [
+    "/level1/lesson1/exercise4/l1-l1-p2-hao_1.gif",
+    "/level1/lesson1/exercise4/l1-l1-p2-hao_2.gif",
+    "/level1/lesson1/exercise4/l1-l1-p2-hao_3.gif",
+    "/level1/lesson1/exercise4/l1-l1-p2-hao_4.gif",
+    "/level1/lesson1/exercise4/l1-l1-p2-hao_5.gif"
+  ],
+  "strokeOrder": [
+    "3,5,3,1,2,2,2,2,4,1,2,1"
+  ]
+}

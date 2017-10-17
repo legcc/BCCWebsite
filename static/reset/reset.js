@@ -1,0 +1,1 @@
+module.exports=function reset(e,f){var g=e.documentElement;var h=g.clientWidth;if(!h){return}if(h>=640){g.style.fontSize="100px"}if(h>=1380){g.style.fontSize=(h/1380)*100+"px"}if(h<640){g.style.fontSize=100*(h/640)+"px"}};

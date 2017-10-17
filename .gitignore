@@ -1,0 +1,12 @@
+eg:
+/node_modules/
+!/node_modules/nuxt/
+/.nuxt/*
+/.idea/*
+/.git/*
+/build/*
+/dist/
+npm-debug.log
+build/main.map
+build/main.js
+static/server.config.js

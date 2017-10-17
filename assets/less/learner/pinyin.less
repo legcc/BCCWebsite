@@ -1,0 +1,100 @@
+.pinyin-view {
+    background: #FFF;
+    padding: 0.18rem 0.28rem;
+    .info-desc {
+        padding: .18rem .18rem 0.05rem .18rem;
+        line-height: 1.8;
+        text-indent: 2em;
+        font-family: GothamRounded-Book;
+        font-size: 14px;
+        color: lighten(#6B7788, -4%);
+        em {
+            font-size: 16px;
+            color: #FF0000;
+        }
+    }
+    .main-top {
+        height: .5rem;
+        line-height: .5rem;
+        background: white;
+        margin-bottom: 2px;
+        font-family: GothamRounded-Medium;
+        color: #607592;
+        border-bottom: .01rem solid #ebedf6;
+    }
+    .audioPlayer {
+        display: none;
+    }
+    .content-shop {
+        height: 2.16rem;
+        border: 1px solid #F2F4FA;
+        margin-bottom: .18rem
+    }
+    .shop-head {
+        padding: .1rem 0 .1rem .18rem;
+        background: #F2F4FA;
+        overflow: hidden;
+        border-bottom: 1px solid #F2F4FA;
+        em {
+            font-family: GothamRounded-Medium;
+            margin-right: .18rem;
+        }
+        em, ul {
+            float: left;
+            height: .3rem;
+            line-height: .3rem;
+        }
+        ul li {
+            cursor: pointer;
+            width: .4rem;
+            height: .3rem;
+            border-radius: 4px;
+            background: #8b9fbc;
+            color: white;
+            text-align: center;
+            float: left;
+            font-size: 16px;
+            font-family: GothamRounded-Medium;
+            margin: 0 .1rem 0 0;
+            &:hover{
+                transition:all .1s ease-in;
+                background: #4ebc5a;
+            }
+        }
+    }
+    .shop-box {
+        padding: .18rem;
+        box-sizing: border-box;
+        .active {
+            background: #A2CF49;
+            color: white;
+        }
+        ul {
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        ul li {
+            cursor: pointer;
+            width: .65rem;
+            height: .45rem;
+            border-radius: 4px;
+            text-align: center;
+            line-height: .45rem;
+            float: left;
+            color: #607592;
+            border: 1px solid #B4B9C1;
+            font-family: "GothamRounded-Medium";
+            margin: .068rem;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        li:hover {
+            background: #A2CF49;
+            color: white;
+        }
+    }
+    .atv-be {
+        background: #607592;
+        color: white !important;
+    }
+}

@@ -1,0 +1,171 @@
+/*下面的每个格子的内容*/
+.content-lesson-list {
+    width: 10.13rem;
+    transform: perspective(1200px);
+    margin: 1px;
+	/*每个格子的内容*/
+    .lesson-info:nth-child(4n) {
+        margin-right: 0;
+    }
+    .lesson-info {
+        width: 2.4rem;
+        height: 2.77rem;
+        float: left;
+        margin: 0.18rem 0.075rem 0 0.075rem;
+        background: #F0EFF5;
+        border-radius: 2px;
+        box-shadow: 0 5px 3px -2px #c4c6d3;
+        position: relative;
+        overflow: hidden;
+	    /*卡片样式*/
+	    .lesson-card {
+	        height: 1.70rem;
+	        border-radius: 2px 2px 0 0;
+		    .img-container {
+		        width: .95rem;
+		        height: .66rem;
+		        margin: 0 auto;
+		        border-radius: 4px;
+		        overflow: hidden;
+		        img {
+		            width: 100%;
+		            height: 100%;
+		        }
+		    }
+			.info-img {
+		        display: block;
+		        margin: 0 auto;
+			}
+		    .info-state {
+		        color: #f4f8fe;
+		        font-family: GothamRounded-Book;
+		        display: block;
+		        height: .42rem;
+		        line-height: .42rem;
+		        font-weight: bolder;
+		        text-align: center;
+		    }
+		    .info-title {
+		        display: block;
+		        text-align: center;
+		        font-size: 30px;
+		        margin: 0 auto;
+		        font-family: GothamRounded-Book;
+		        font-weight: bolder;
+		        color: #f4f8fe;
+		    }
+		    .info-introduce {
+		        font-family: GothamRounded-Book;
+		        width: 100%;
+		        margin-top: .05rem;
+		        box-sizing: border-box;
+		        display: block;
+		        text-align: center;
+		        font-size: 14px;
+		        font-weight: bold;
+		        color: #f4f8fe;
+		    }
+		}
+	    /*卡片底部*/
+	    .lesson-introduction {
+	        height: 1.07rem;
+			li:nth-child(2) {
+			    em {
+			        position: relative;
+			        top: 1px;
+			    }
+ 			}
+			li {
+		        margin: 0 .13rem;
+		        text-indent: 2px;
+		        height: .35rem;
+		        line-height: .35rem;
+		        position: relative;
+		        color: #50627c;
+		        font-size: 12px;
+		        font-family: GothamRounded-Book;
+		        font-weight: bolder;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			    .aside {
+			        position: absolute;
+			        left: 55%;
+			    }
+			    /*虚线*/
+			    &:not(:last-child):after {
+			        content: "";
+			        position: absolute;
+			        height: 1.5px;
+			        width: 100%;
+			        left: 0;
+			        background: #c4c6d3 linear-gradient(90deg, #c4c6d3 50%, #F0EFF5 0, #F0EFF5 100%) repeat-x;
+			        background-size: 18px 1.5px;
+			        bottom: -1px;
+			    }
+			}
+
+		}
+	    .level1 {
+	        background: #5b9bd5;
+	    }
+	    .level2 {
+	        background: #70ad47;
+	    }
+	    .level3 {
+	        background: #ed7d31;
+	    }
+	    .level4 {
+	        background: #666699;
+	    }
+	    .level5 {
+	        background: #ff5050;
+	    }
+	    .level6 {
+	        background: #4472c4;
+	    }
+	}
+    .lesson-info:hover {
+        transition: all .2s ease-in;
+        transform: scale(1.05,1.05);
+        cursor: pointer;
+	}
+    .info-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        transform: translate(-50%, -50%);
+	    .lesson-message-btn {
+	        width: 1.55rem;
+	        height: .41rem;
+	        background: rgba(0, 0, 0, .6);
+	        color: #f6f5fe;
+	        font-family: GothamRounded-Book;
+	        line-height: .41rem;
+	        text-align: center;
+	        margin-bottom: .1rem;
+	        border-radius: 5px;
+	        font-size: 14px;
+	    }
+	    &:first-child {
+	        background: #ff9900;
+	    }
+	}
+    &:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+.info-shade-lock {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: all .5s linear;
+    display: block;
+    background: rgba(0, 0, 0, .5) url("~~assets/img/class/white-lock.png") center no-repeat;
+}

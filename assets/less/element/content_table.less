@@ -1,0 +1,145 @@
+@import "~element-ui/lib/theme-default/select.css";
+@import "~element-ui/lib/theme-default/date-picker.css";
+@import "~element-ui/lib/theme-default/pagination.css";
+@import "~element-ui/lib/theme-default/icon.css";
+@import "~element-ui/lib/theme-default/table.css";
+
+.table-container {
+	padding: .18rem .28rem;
+	background: white;
+	min-height: 5.2rem;
+  	/*修改ui框架样式*/
+  	.el-input__inner {
+    	cursor: pointer;
+   	 	height: .32rem;
+    	margin-top: .07rem;
+    	color: #7F8CA0;
+    	box-shadow:0 1px 2px #878b92 inset;
+   	 	&::-webkit-input-placeholder {
+      		color: #C2C7CE;
+      		text-indent: 4px;
+      		font-family: GothamRounded-Book;
+      		font-weight: normal;
+    	}
+    	&::-moz-placeholder {
+      		color: #C2C7CE;
+      		text-indent: 4px;
+      		font-family: GothamRounded-Book;
+      		font-weight: normal;
+   	 	}
+   	 	&:-ms-input-placeholder {
+     		color: #C2C7CE;
+      		text-indent: 4px;
+      		font-family: GothamRounded-Book;
+      		font-weight: normal;
+    	}
+    	&:-moz-placeholder {
+      		color: #C2C7CE;
+      		text-indent: 4px;
+      		font-family: GothamRounded-Book;
+      		font-weight: normal;
+    	}
+  	}
+  	.date-picker {
+    	width: 2.3rem;
+    	cursor: pointer;
+    	margin-left: .1rem;
+  	}
+  	.selector {
+    	width: 1.08rem;
+    	margin-left: .1rem;
+    	.el-input__inner {
+      		font-weight: bold;
+    	}
+  	}
+  	.nav-el-input {
+   		width: 1.52rem;
+    	margin-left: .18rem;
+    	margin-right: 1.18rem;
+  	}
+  	.content-table {
+    	margin-bottom: .18rem;
+    	min-height: 4rem;
+    	color: lighten(#9D9D9D, 10%);
+ 	}
+ 	.table-action {
+        color: blue;
+        background: none;
+    }
+ 	.el-table-div {
+    	margin-top: 0.18rem;
+    	width: 100%
+	}
+	.el-table__row .cell{
+  		padding:0 2px!important;
+	}
+	.el-table th .cell{
+  		font-family: GothamRounded-Medium;
+  		color: #6b7788;
+	}
+	.el-table .cell, .el-table th>div{
+  		padding-left: 0;
+  		padding-right: 0;
+  		font-family: GothamRounded-Light;
+  		color: #607592;
+        font-size: 14px;
+	}
+	.el-table button {
+  		font-family: GothamRounded-Light;
+  		color: #8296c7;
+        font-size: 14px;
+        background: none;
+	}
+	.el-table .caret-wrapper {
+  		float: right;
+  		margin-right: -.15rem;
+	}
+	.el-table tr {
+		border-color: #607592;
+  		background: #F8F9FE;
+  		cursor: pointer;
+	}
+	.el-table--striped .el-table__body tr.el-table__row--striped td {
+  		background: transparent;
+	}
+	tr.el-table__row--striped {
+  		background: white;
+  		transition: .5s;
+	}
+	.el-table__row--striped:hover {
+  		background: rgb(238, 241, 246);
+	}
+	.el-table th {
+  		background: white;
+  		.cell {
+    		background: white;
+  		}
+	}
+  	.el-icon-arrow-left:before {
+    	content: "PRE";
+  	}
+  	.el-icon-arrow-right:before {
+    	content: "NEXT";
+  	}
+    .empty-notice {
+    	text-align: center;
+    	padding-top: .6rem;
+    	.tip-sentence{
+	        font-size: 14px;
+	        text-align: center;
+	        color: #607592;
+	        margin-bottom: .21rem;
+	    }
+	    .link-entry {
+	        color: #8296c7;
+	        font-size: 16px;
+	        position: relative;
+	        cursor: pointer;
+	    }
+    }
+}
+.tools-content{
+    padding: .2rem 0rem 0rem 0rem;
+    background: white;
+    overflow: hidden;
+}

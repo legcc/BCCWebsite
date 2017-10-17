@@ -1,0 +1,70 @@
+@import "functions";
+//背景撑满
+@mixin fullBg($url) {
+  background: url($url) no-repeat;
+  background-size: 100% 100%;
+}
+@mixin l2FullBg($url) {
+  @include fullBg('~~assets/img/exercise/level4/'+$url);
+}
+//练习容器
+@mixin exerciseContainer($ratio,$width,$url) {
+  $height: getHeightFromAspectRatio($ratio, $width);
+  width: $width;
+  height: $height;
+  margin: 0 auto;
+  text-align: center;
+  line-height: $height;
+  @include fullBg('~~assets/img/exercise/'+$url);
+}
+//练习图片
+@mixin exerciseImage($ratio,$width) {
+  $height: getHeightFromAspectRatio($ratio, $width);
+  width: $width;
+  height: $height;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  line-height: $height;
+}
+//直接给图片撑满背景
+@mixin fullBgWithPicName($url) {
+  background: url('~~assets/img/exercise/' + $url) no-repeat;
+  background-size: 100% 100%;
+}
+//直接给图片撑满背景(前缀为另一个exercise目录)
+@mixin fullBgWithMainContentPicName($url) {
+  background: url('~~assets/img/main_content/exercise/' + $url) no-repeat;
+  background-size: 100% 100%;
+}
+
+//初始值宽度,内容高度,高宽比map 内容横向顶开父容器 父容器等比例缩放
+@mixin ratioContainer($minWidth,$innerHeight,$ratio ) {
+  $Rwidth: map-get($ratio, width) ;
+  $Rheight: map-get($ratio, height);
+  $padding:($Rheight/$Rwidth)*50%;
+  $computedPadding:calc(#{$padding} - #{$innerHeight / 2});
+  min-width: $minWidth;
+  line-height: 1;
+  min-height: getHeightFromAspectRatio($ratio,$minWidth);
+  display: inline-block;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: $computedPadding;
+  }
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom:$computedPadding;
+  }
+}
+//实心云
+@mixin cloud($width:120px,$height:120px){
+  width: $width;
+  height: $height;
+  line-height: $height - 10px;
+  text-align: center;
+  font-family: GothamRounded-Book;
+  @include fullBgWithMainContentPicName("cloud.png");
+}
